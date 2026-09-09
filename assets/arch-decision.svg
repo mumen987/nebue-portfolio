@@ -5,19 +5,19 @@
 <rect x="40" y="110" width="700" height="130" rx="10" fill="#1d222e" stroke="#3a4256" stroke-width="1.5"/>
 <text x="390" y="144" font-size="17" fill="#e8b34b" font-weight="bold" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">① 输入与事实装配</text>
 <text x="215" y="172" font-size="11" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">用户消息（Web / QQ / 群聊）</text>
-<text x="520" y="172" font-size="#6ea8d8" fill="12" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">think_loop 主动循环（300s × 昼夜节律）</text>
-<text x="215" y="200" font-size="#58c98a" fill="12" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">感知信号注册表 · 7 信号</text>
-<text x="520" y="200" font-size="#58c98a" fill="11" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">idle/app/screen/umsg/pillars/selfact/keyact</text>
+<text x="520" y="172" font-size="12" fill="#6ea8d8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">think_loop 主动循环（300s × 昼夜节律）</text>
+<text x="215" y="200" font-size="12" fill="#58c98a" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">感知信号注册表 · 7 信号</text>
+<text x="520" y="200" font-size="11" fill="#58c98a" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">idle/app/screen/umsg/pillars/selfact/keyact</text>
 <text x="215" y="225" font-size="#b9c2cf" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">记忆召回 Hot/Warm/Cold · 重要性 × 时间分</text>
 <text x="520" y="225" font-size="#a98ae0" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">钱包事实（余额 + 成本价目表）</text>
 <rect x="40" y="290" width="700" height="170" rx="10" fill="#242b3a" stroke="#e8b34b" stroke-width="2"/>
 <text x="390" y="324" font-size="17" fill="#e8b34b" font-weight="bold" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">② 决策层（判断归 LLM）</text>
 <text x="180" y="354" font-size="11" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">决策注入（DECISION_PROMPT 后置）</text>
-<text x="520" y="354" font-size="#b9c2cf" fill="12" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">事实读数：能量 / 孤独 / 钱包…</text>
-<text x="180" y="382" font-size="#6ea8d8" fill="12" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">语言风格追加末条 user 消息</text>
+<text x="520" y="354" font-size="12" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">事实读数：能量 / 孤独 / 钱包…</text>
+<text x="180" y="382" font-size="12" fill="#6ea8d8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">语言风格追加末条 user 消息</text>
 <text x="520" y="382" font-size="#b9c2cf" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">心情基调 L3（小时~天 EMA）</text>
 <text x="390" y="416" font-size="16" fill="#e8e6e3" text-anchor="True" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">LLM decide → action</text>
-<text x="390" y="440" font-size="#6ea8d8" fill="13" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">act / rest · speak / explore / think</text>
+<text x="390" y="440" font-size="13" fill="#6ea8d8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">act / rest · speak / explore / think</text>
 <rect x="40" y="510" width="1460" height="240" rx="10" fill="#1d222e" stroke="#3a4256" stroke-width="1.5"/>
 <text x="770" y="544" font-size="17" fill="#e8b34b" font-weight="bold" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">③ 认知流水线（层接口 LayerRegistry / IContextProvider）</text>
 <rect x="75" y="572" width="160" height="56" rx="10" fill="#242b3a" stroke="#6ea8d8" stroke-width="1.5"/>
@@ -44,23 +44,23 @@
 <rect x="1349" y="572" width="160" height="56" rx="10" fill="#242b3a" stroke="#6ea8d8" stroke-width="1.5"/>
 <text x="1429" y="606" font-size="15" fill="#e8e6e3" font-weight="bold" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">L3b 表达</text>
 <text x="770" y="660" font-size="#b9c2cf" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">各层只产出片段（历史 / 引导 / 提示），L9 统一汇编为 system prompt</text>
-<text x="770" y="686" font-size="#b9c2cf" fill="12" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">L2 文学 / L6 独立层 / L8 驱力已并或退役 · 智能路由 fast / semi_fast / full</text>
-<text x="770" y="712" font-size="#6ea8d8" fill="12" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">说话路径 temp 1.0 / 判定路径 temp 0 · 前缀缓存优化命中</text>
+<text x="770" y="686" font-size="12" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">L2 文学 / L6 独立层 / L8 驱力已并或退役 · 智能路由 fast / semi_fast / full</text>
+<text x="770" y="712" font-size="12" fill="#6ea8d8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">说话路径 temp 1.0 / 判定路径 temp 0 · 前缀缓存优化命中</text>
 <rect x="40" y="800" width="1460" height="180" rx="10" fill="#242b3a" stroke="#58c98a" stroke-width="2"/>
 <text x="770" y="834" font-size="17" fill="#58c98a" font-weight="bold" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">④ 表达输出（一个行为，一条链路）</text>
-<text x="300" y="868" font-size="#e8e6e3" fill="15" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">speak() 唯一说话管线</text>
+<text x="300" y="868" font-size="15" fill="#e8e6e3" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">speak() 唯一说话管线</text>
 <line x1="475" y1="862" x2="560" y2="862" stroke="#3a4256" stroke-width="2" marker-end="url(#ah)"/>
-<text x="600" y="868" font-size="#e8e6e3" fill="15" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">ExpressionParser</text>
+<text x="600" y="868" font-size="15" fill="#e8e6e3" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">ExpressionParser</text>
 <line x1="730" y1="862" x2="800" y2="862" stroke="#3a4256" stroke-width="2" marker-end="url(#ah)"/>
-<text x="850" y="868" font-size="#e8e6e3" fill="15" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">*耳朵红* → 语义</text>
+<text x="850" y="868" font-size="15" fill="#e8e6e3" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">*耳朵红* → 语义</text>
 <line x1="985" y1="862" x2="1060" y2="862" stroke="#3a4256" stroke-width="2" marker-end="url(#ah)"/>
-<text x="1130" y="868" font-size="#e8e6e3" fill="15" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">UnifiedExpressionTarget</text>
-<text x="300" y="900" font-size="#6ea8d8" fill="13" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">Live2D 表情 / 动作</text>
-<text x="600" y="900" font-size="#6ea8d8" fill="13" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">PAD 呼吸漂移 ±3%</text>
-<text x="900" y="900" font-size="#6ea8d8" fill="13" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">TTS 语速 / 增益</text>
-<text x="1180" y="900" font-size="#6ea8d8" fill="13" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">行为留痕 / 工具气泡</text>
-<text x="770" y="932" font-size="#b9c2cf" fill="12" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">工具结果当轮回喂 → 主动与被动共用唯一管线 · 三种结局清 pending</text>
-<text x="770" y="955" font-size="#b9c2cf" fill="12" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">深夜静默三条件 AND · 钱包不足统一拦截「钱包空了喵…」</text>
+<text x="1130" y="868" font-size="15" fill="#e8e6e3" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">UnifiedExpressionTarget</text>
+<text x="300" y="900" font-size="13" fill="#6ea8d8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">Live2D 表情 / 动作</text>
+<text x="600" y="900" font-size="13" fill="#6ea8d8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">PAD 呼吸漂移 ±3%</text>
+<text x="900" y="900" font-size="13" fill="#6ea8d8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">TTS 语速 / 增益</text>
+<text x="1180" y="900" font-size="13" fill="#6ea8d8" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">行为留痕 / 工具气泡</text>
+<text x="770" y="932" font-size="12" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">工具结果当轮回喂 → 主动与被动共用唯一管线 · 三种结局清 pending</text>
+<text x="770" y="955" font-size="12" fill="#b9c2cf" text-anchor="middle" font-family="Microsoft YaHei, sans-serif" letter-spacing="0.5">深夜静默三条件 AND · 钱包不足统一拦截「钱包空了喵…」</text>
 <line x1="390" y1="240" x2="390" y2="290" stroke="#3a4256" stroke-width="2" marker-end="url(#ah)"/>
 <line x1="390" y1="460" x2="390" y2="510" stroke="#3a4256" stroke-width="2" marker-end="url(#ah)"/>
 <line x1="770" y1="750" x2="770" y2="800" stroke="#3a4256" stroke-width="2" marker-end="url(#ah)"/>
