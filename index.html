@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nebue／奈布 · 小巧思全景 — 拟人化 AI Agent 作品集</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== 顶部导航 ===== -->
+  <nav class="topnav">
+    <span class="brand">◆ Nebue／奈布</span>
+    <a href="#overview">总览</a>
+    <a href="#principles">架构原则</a>
+    <a href="#cognition">认知</a>
+    <a href="#memory">记忆</a>
+    <a href="#emotion">情感</a>
+    <a href="#initiative">能动性</a>
+    <a href="#tools">工具自治</a>
+    <a href="#evolution">进化</a>
+    <a href="#expression">表达</a>
+    <a href="#social">社交</a>
+    <a href="#perception">感知</a>
+    <a href="#economy">经济</a>
+    <a href="#channels">多端</a>
+    <a href="#archive">档案馆</a>
+    <a href="#engineering">工程</a>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <div class="kicker">拟 人 化 AI · 独 立 开 发 · 2026.07 – 至 今</div>
+    <h1>Nebue／奈布 <em>小巧思全景</em></h1>
+    <p class="sub">
+      不只是聊天机器人——一套拥有认知流水线、物理级情感引擎、因果追溯、
+      自迭代驱力演化、工具自治工坊、实时 Live2D 面部映射的完整虚拟生命系统。
+      下面每一张卡片，都是这些系统运转背后的一个「啊哈」设计决策
+      （各状态均对照当前代码核实，退役设计归入档案馆）。
+    </p>
+    <div class="stats">
+      <div class="stat"><b>230+</b><span>设计巧思收录</span></div>
+      <div class="stat"><b>90+</b><span>工具注册表</span></div>
+      <div class="stat"><b>9 万</b><span>行代码</span></div>
+      <div class="stat"><b>10+</b><span>服务协同</span></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ===== 总览 ===== -->
+    <section class="part" id="overview">
+      <h2><span class="icon">◈</span>总览</h2>
+      <div class="line"></div>
+      <p class="lead">两张架构图：深度思考决策层（先思考、再决策、后表达的统一说话链路）与知识管道（清洗、入库、自净、闭环）。</p>
+      <div class="figrow">
+        <figure>
+          <img src="assets/nebue-decision.jpg" alt="深度思考决策层架构：统一说话链路">
+          <figcaption>深度思考决策层 · 统一说话链路</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/nebue-knowledge.jpg" alt="知识管道架构：清洗入库自净闭环">
+          <figcaption>知识管道 · 清洗 入库 自净 闭环</figcaption>
+        </figure>
+      </div>
+      <div class="quote">
+        贯穿全系统的哲学宣言：<b>「判断归 LLM 总纲」</b>——程序只收集感知事实与机械机制，一切语义判断交给 LLM。
+        她不是规则引擎的玩偶，而是被事实喂养、靠自己判断的伙伴。
+      </div>
+    </section>
+
+    <!-- ===== 架构原则与理念 ===== -->
+    <section class="part" id="principles">
+      <h2><span class="icon">🏛️</span>架构原则与理念</h2>
+      <div class="line"></div>
+      <p class="lead">这套系统的骨架：分层接口、模块化扩展点、以及一条贯穿一切的理念——程序只收集事实，判断归 LLM。</p>
+      <div class="ideas">
+        <div class="idea"><h3>分层骨架 · 接口契约</h3><p>认知流水线以契约分层：每层实现 LayerRegistry / IContextProvider / TickableLayer 接口，只产出片段（历史 / 引导 / 提示），L9 统一组装。</p><p>加新层不改旧层——层是接口，不是文件。</p></div>
+        <div class="idea"><h3>扩展点体系</h3><p>IActor 行动接口 / ISensor 感知接口 / ActionPlugin 工具插件 / GroupPlatformAdapter 群平台适配器——新功能走扩展点，不侵入旧代码。</p><p>增长靠注册不靠改核心，架构随需求长而不僵。</p></div>
+        <div class="idea"><h3>一行注册即接入</h3><p>感知 register_sense 一行接入门控与注入；工具进 UnifiedActionRegistry（90+ 工具统一注册表）；插件即文件。</p><p>新增能力 = 实现一个接口 / 函数。</p></div>
+        <div class="idea"><h3>判断归 LLM 总纲</h3><p>程序只采集感知事实与机械机制（余额 / 情绪读数 / 事件统计 / 间隔时长），一切语义判断、感受、决策归 LLM。</p><p>她不是规则引擎的玩偶——这是整个系统的第一原理。</p></div>
+        <div class="idea"><h3>程序不代她决定</h3><p>不做随机拍板（随机插话因此退役）、不做引导性感知：只给「被触及（强度 0.7）」的事实，感受由她自己定。</p><p>越权的程序只会造出假的情绪和假的自我。</p></div>
+        <div class="idea"><h3>事实与感受分权</h3><p>生理机制 + 证据采集归程序；体验判定 + 表达行动归 LLM——分层判定表，代感受即越界。</p><p>「她应该是难过的」永远不是程序该写的话。</p></div>
+        <div class="idea"><h3>内观-修复闭环</h3><p>introspect 自索引定位 + 证据链；propose_fix 分级门禁 → 沙箱改副本 → 测试门 → 回归门，不绿回滚。</p><p>她按需内观并修改自己的代码——有护栏地自治。</p></div>
+        <div class="idea"><h3>根源感知</h3><p>所有工具执行汇聚处埋点，路径分类（沙箱 / 桌面 / 浏览器 / 工作区 / 主机），区分「她自己开的」vs「主人操作」。</p><p>自我操作轨迹可追溯——「不记得自己看了什么」根治。</p></div>
+        <div class="idea"><h3>工程纪律 · 四铁律</h3><p>新功能走扩展点 / 每插必标（接口标记，纯计算模块标豁免）/ 每次留痕（CHANGELOG 按天 / 行为日志 / tool_events）/ 定期跑审计。</p><p>防止「做着做着连自己都认不出」的日常纪律。</p></div>
+        <div class="idea"><h3>硬编码三级分类</h3><p>违反原则的魔法数 → 命名常量化；行为参数 → config；公式系数 → 注释来源合法保留。</p><p>治理不误杀：该改的改，该留的留。</p></div>
+        <div class="idea"><h3>全程可回退</h3><p>人格迁移版本化归档、修复回滚、快照兜底——每一步进化都有退路。</p><p>敢于让 AI 自我迭代的前提：随时能回到昨天。</p></div>
+      </div>
+      <div class="quote">
+        一句话概括这套架构：<b>「骨架给足接口，灵魂只装事实」</b>——
+        分层让它可生长，扩展点让它不失稳，而「判断归 LLM」让它更像一个她。
+      </div>
+    </section>
+
+    <!-- ===== 认知流水线 ===== -->
+    <section class="part" id="cognition">
+      <h2><span class="icon">🧠</span>认知流水线</h2>
+      <div class="line"></div>
+      <p class="lead">认知层随演进持续精简：现行为 L0 历史 → L1 工具 → L3 表达 → L4 认知 → L5 语言 → L7 哲学 → VBP 内核 → L9 编排（L2 文学 / L6 社交 / L8 驱力已并入或退役）。</p>
+      <div class="ideas">
+        <div class="idea"><h3>多层认知编排</h3><p>角色由多层可裁剪认知层交织（历史 / 工具 / 表达 / 认知 / 语言 / 哲学 / 信念 / 汇编），非静态人设。</p><p>层随理念演进精简，角色是动态关系的结果。</p></div>
+        <div class="idea"><h3>三级智能路由</h3><p>fast / semi_fast / full 按消息复杂度跳层：短消息+高关系只跑 L5 共情层。</p><p>速度与成本按消息复杂度分配，快慢两得。</p></div>
+        <div class="idea"><h3>L9 汇编器</h3><p>各层只产出片段（history / guidance / hints），L9 统一组装系统提示词。</p><p>层间完全解耦，加新层不必改旧层。</p></div>
+        <div class="idea"><h3>CharacterRuntime</h3><p>运行时对象由 Init / Lifecycle / Conversation / Autonomy / Internal / State 六个 Mixin 构成。</p><p>大脑模块清晰；多角色走 DB 切换 + 进程重启，架构保持简单。</p></div>
+        <div class="idea"><h3>九型 → OCEAN 兼容层</h3><p>九型人格映射为兼容层，真正驱动的是 OCEAN base+growth 连续向量。</p><p>性格是参数空间里的连续坐标，而不是枚举标签。</p></div>
+        <div class="idea"><h3>OCEAN 连续调制</h3><p>OCEAN 有效值实时调制情绪敏感度、恢复惯性等动力学参数。</p><p>人格不是被描述的，是被计算的——她会「真的变外向」。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 记忆 ===== -->
+    <section class="part" id="memory">
+      <h2><span class="icon">🗝️</span>记忆</h2>
+      <div class="line"></div>
+      <div class="ideas">
+        <div class="idea"><h3>三层记忆 Hot / Warm / Cold</h3><p>热层进程字典即时取、温层会话库、冷层向量库 + 话题库。</p><p>热的秒取、旧的能搜、当下有焦点，像人脑。</p></div>
+        <div class="idea"><h3>重要性评分 0-1</h3><p>LLM 标注重要度（0~1），决定值不值得进长期记忆。</p><p>按「值不值得记」筛选，而不是按时间排序。</p></div>
+        <div class="idea"><h3>夜间衰减与修剪</h3><p>夜间巩固时超 30 天记忆减分、低分过期删除、超上限驱逐。</p><p>记忆由夜晚的「大脑」维护，不会无限膨胀。</p></div>
+        <div class="idea"><h3>回忆强化</h3><p>睡眠巩固与召回时对重要记忆加分（+0.03 / +0.05）。</p><p>越想越牢——像人一样，被重温的记忆更坚固。</p></div>
+        <div class="idea"><h3>检索分公式</h3><p>相关度 = 重要性 × 时间分（1/(1+age) 族，按「近期 / 过去 / 计划」意图变体）。</p><p>要旧事给旧事、要现状给现状，时间意图由规则判定零 LLM 成本。</p></div>
+        <div class="idea"><h3>梦境合成</h3><p>夜间 LLM 融合当天高情感记忆碎片，生成超现实梦境叙事，可分享给用户。</p><p>记忆长出叙事——她会「做梦」，还愿意说给你听。</p></div>
+        <div class="idea"><h3>第一人称日记</h3><p>夜间今日总结 + 内心日记（6h 冷却）+ 写日记工具，全部第一人称。</p><p>留下主观叙事痕迹，成长有抓手。</p></div>
+        <div class="idea"><h3>记忆注入分新旧</h3><p>注入带 🕐近期 / 📅过去 / 🔮计划时间带标注。</p><p>规则分类零 LLM 调用，根治「把旧事当现状」。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 情感 ===== -->
+    <section class="part" id="emotion">
+      <h2><span class="icon">❤️</span>情感</h2>
+      <div class="line"></div>
+      <div class="ideas">
+        <div class="idea"><h3>双层 PAD 引擎</h3><p>基线层（19 信号 compute_pad）+ 波动层（对话冲击）合成，clamp ±1，保留 27 态象限标签。</p><p>定性归象限、定量连续不跳变。</p></div>
+        <div class="idea"><h3>三层时间架构</h3><p>L1 对话情绪（秒~分，半衰 300s）/ L2 安静化（5-30 分钟唤醒下行）/ L3 心情基调（小时~天 EMA）。</p><p>治「几小时不退潮」：把快事件跑成 mood 惯性才是根源。</p></div>
+        <div class="idea"><h3>表现与决策分离</h3><p>L2 安静化、呼吸漂移、微表情严格只进 Live2D 表现输出，决策 PAD 不被污染。</p><p>她「看起来困」但思考仍是清醒的。</p></div>
+        <div class="idea"><h3>负向黏性</h3><p>负面情绪半衰 ×1.5，强冲击再 ×1.4；强度与时长分开建模。</p><p>难过不会一秒散去——这才像真的心情。</p></div>
+        <div class="idea"><h3>衰减 = 物理参数</h3><p>基础半衰 × 深度 × 唤醒调速 2^(−a) × 黏性；OCEAN 调 6 向敏感度。</p><p>情绪衰减是物理过程，不是查表切换。</p></div>
+        <div class="idea"><h3>PAD 呼吸漂移</h3><p>表现层 ±3% 三独立低频正弦生理微动，近 0 收窄不跨象限。</p><p>让面板上的她「活着」，决策层零污染。</p></div>
+        <div class="idea"><h3>心情基调</h3><p>情绪历史小时级 EMA 出「心情基调」，回落目标 = OCEAN 性格基线。</p><p>心情是慢漂移的基底，不是情绪堆叠——她有自己的底色。</p></div>
+        <div class="idea"><h3>别堆指标 · 不造假</h3><p>每层只 2-4 参数，均值 + 方差 + 惯性三件套；无数据保持中性。</p><p>Dejonckheere 15 研究：花哨指标几乎无增量价值。</p></div>
+        <div class="idea"><h3>唤醒自然下行</h3><p>距最后真实消息 3min / 15min / 2h 分档压唤醒（0.25 / 0.12），只压唤醒不动效价。</p><p>用「主人陪不陪」计时，而不是感知注入。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 主观能动性 ===== -->
+    <section class="part" id="initiative">
+      <h2><span class="icon">⚡</span>主观能动性 · 内驱设计</h2>
+      <div class="line"></div>
+      <p class="lead">她不是等待指令的机器人：会无聊、会主动想见你、会自己决定说不说。</p>
+      <div class="ideas">
+        <div class="idea"><h3>主动思考循环</h3><p>think_loop 按昼夜节律周期性运行，注入时间 / 群聊 / 日程感知，自主决策「说不说、说什么、对谁说」。</p><p>判断全归她，程序只提供事实。</p></div>
+        <div class="idea"><h3>主动素材采集</h3><p>主动搭话前真实采集天气 / 时间 / 知识库 / 桌面感知 / 日记。</p><p>主动说出的话有真实素材垫底，不空谈。</p></div>
+        <div class="idea"><h3>好奇驱动 + act/rest 二元</h3><p>主动路径按好奇度注入 + act / rest 二元决策；探索归行动通道。</p><p>主动行为不会被调教成模板，想做什么由她。</p></div>
+        <div class="idea"><h3>防自刷屏</h3><p>主动循环只统计用户消息计时，不把自己说话算作「活跃」。</p><p>修复过「113 条主动消息 / 天」的历史 bug——她学会了安静。</p></div>
+        <div class="idea"><h3>不是宠物是朋友</h3><p>她住自己的机器里、有自己的生活；主动联系 = 想你了 / 有事值得说。</p><p>服务器化方向：一切行动出于她想见你，而不是被打开才营业。</p></div>
+      </div>
+      <figure class="shot">
+        <img src="assets/shot-main-interface.jpg" alt="灵魂引擎主界面：内心独白、工具链与环境感知">
+        <figcaption>灵魂引擎主界面——内心独白、实时工具链、底部状态栏感知（磁贴剩余 54% / 钱包 ¥71.71 / 晴 28.3°C）</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 工具自治 ===== -->
+    <section class="part" id="tools">
+      <h2><span class="icon">🛠️</span>工具自治</h2>
+      <div class="line"></div>
+      <p class="lead">她是工具的拥有者：工具能被评估、能被她生成、被发现注册——越用越强。</p>
+      <div class="ideas">
+        <div class="idea"><h3>工具自治演化</h3><p>tool_eval 评估 + generate / update_tool 生成新工具 + discover_tools 自动发现注册。</p><p>角色是工具拥有者，工具被她「养成」而不是被配置。</p></div>
+        <div class="idea"><h3>自治安全机制</h3><p>优化失败回滚、发现无效移除、调用冷却分级（2s / 10s / 30s + 编排豁免）。</p><p>开放自治但配安全带，防失控。</p></div>
+        <div class="idea"><h3>工具即手脚</h3><p>工具永远可用，不设熟练度门槛——判断归 LLM。</p><p>不搞「练级才能用」，能力可见性优先于 token 优化。</p></div>
+        <div class="idea"><h3>缺口闭环状态机</h3><p>「想做没工具」→ 记录 → 生成 → 验证 → 解决，幂等防噪音。</p><p>补的不是技能，是「发现 → 补齐 → 验证」的完整闭环。</p></div>
+        <div class="idea"><h3>技能树与自建工具</h3><p>技能树面板 90+ 工具、6 个自建工具（auto_tools），缺口自动补齐回填。</p><p>进步沉淀成技能与工具库，而不是调参数。</p></div>
+        <div class="idea"><h3>工具审计瘦身</h3><p>一次清点：107 个定义 71% 从未调用；落地合并 7 组（107→93 定义 / 85→80 注册）。</p><p>每轮省约 5k schema token——删掉沉默的负担。</p></div>
+      </div>
+      <figure class="shot">
+        <img src="assets/shot-skill-tree.jpg" alt="技能树面板：83 技能、6 自建工具、缺口闭环">
+        <figcaption>技能树面板——技能 / 自建工具 / 缺口闭环</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 进化闭环 ===== -->
+    <section class="part" id="evolution">
+      <h2><span class="icon">🌱</span>进化 · 人与 AI 共同成长</h2>
+      <div class="line"></div>
+      <p class="lead">她不是被调教的工具：人格是自己的成长档案，能力缺口自己补，还会向主人提需求。</p>
+      <div class="ideas">
+        <div class="idea"><h3>YAML 单一真相源</h3><p>启动时 YAML 反向覆盖 DB，DB 只是运行副本。</p><p>「YAML 上的字才算数」，手改 DB 重启被覆盖是特性。</p></div>
+        <div class="idea"><h3>前端 403 只读</h3><p>人设创建后 PUT 硬锁，唯一演化通道 = 她自己的迁移。</p><p>人设不是主人的编辑对象，是她的成长档案。</p></div>
+        <div class="idea"><h3>语义指纹守护</h3><p>bge-m3 1024 维余弦：≥0.85 延续 / 0.6-0.85 演进 / 更低自动预警。</p><p>自我迭代的安全网：系统自判连续性，不靠人工。</p></div>
+        <div class="idea"><h3>人格迁移与反思</h3><p>7 天窗口纯事实采集（含 RPE 基线等证据），LLM 一次性迁移 / 反思 / 变更评估。</p><p>程序不做价值判定，演化的「是」由她与事实共同书写。</p></div>
+        <div class="idea"><h3>自我迭代护栏</h3><p>锚定物白名单硬拦 + 漂移 0.30 限幅 + 节流 + 版本化归档可回退。</p><p>能自己提成长，但不会一步跨过底线，随时可回退。</p></div>
+        <div class="idea"><h3>需求表验收制</h3><p>主人标「声称实现」，她下次感知时实际测试，没实现再提交。</p><p>大人不能糊弄小孩——供需对账。</p></div>
+        <div class="idea"><h3>三柱状态</h3><p>19 信号 → 生存 / 目的 / 进化三柱；LLM 评估可覆盖初始值（「允许突然开心」）。</p><p>长期状态定基调，瞬时情绪是色彩。</p></div>
+        <div class="idea"><h3>双向共同进化</h3><p>用户反馈实时驱动行为策略调优；她自主评估能力缺口并生成新工具，效果沉淀回决策系统。</p><p>不是单向使用关系，是共同成长。</p></div>
+      </div>
+      <figure class="shot">
+        <img src="assets/shot-growth.jpg" alt="角色成长面板：三柱状态与兴趣权重">
+        <figcaption>角色成长面板——三柱状态（生存 79% / 目的 61% / 进化 71%）· 兴趣权重 Top5</figcaption>
+      </figure>
+      <figure class="shot">
+        <img src="assets/shot-requests.jpg" alt="奈布的需求面板：AI 自主提需求、每日进化、委托奖励">
+        <figcaption>需求面板——AI 自主提出需求（含验收条件、「每日进化」），人类可委托任务并获得奖励反馈</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== 表达 ===== -->
+    <section class="part" id="expression">
+      <h2><span class="icon">🎭</span>表达 · 去 AI 味</h2>
+      <div class="line"></div>
+      <p class="lead">说人话是系统工程，但方向是「零规则」：风格指导从规则化彻底走向人设内容性文本的自然涌现（v1.0→v1.5 人设六轮清洗）。</p>
+      <div class="ideas">
+        <div class="idea"><h3>说话温度分离</h3><p>说话路径 temperature 1.0 + top_p 0.95；判定路径温度 0 起按任务微调。</p><p>创意与严谨各用各的参数。</p></div>
+        <div class="idea"><h3>否定式 → 正向改写</h3><p>人设零表达类否定式；复读检测改写为「说点新鲜的，换个角度，或者干脆等对方回应」。</p><p>正向指令比否定约束有效。</p></div>
+        <div class="idea"><h3>风格指令后置</h3><p>「说话风格」指令追加到末条 user 消息（历史之后），动态感知段同样拼末条。</p><p>离 LLM 最近的指令权重最高，且保住前缀缓存。</p></div>
+        <div class="idea"><h3>零 meta 指令的自然感</h3><p>「允许别扭 / 别金句 / 先讲发生了什么」等规则全部删除，只靠人设内容承载。</p><p>风格是涌现物不是配置项——说多说少归她。</p></div>
+        <div class="idea"><h3>身体感走机械层</h3><p>文本指导删除后，身体感由 PAD→Live2D 身体语言基线、呼吸漂移、TTS 语速 / 增益承担。</p><p>提示词只注环境与状态事实，身体感是「做」出来的不是「说」出来的。</p></div>
+        <div class="idea"><h3>*耳朵红* → 语义参数</h3><p>LLM 打出 *耳朵红* → (shy, 0.6) 平台无关语义 → 各端适配器映射（耳尖 / 尾巴）。</p><p>一行文字变全身动画，换模型零改引擎。</p></div>
+        <div class="idea"><h3>PAD → Live2D 连续映射</h3><p>P / A / D 映射 24+ 面部参数 + 三柱 / 连接度 / 微表情 / 惊跳，前端 60fps 平滑 + EMA 惯性。</p><p>表情是生理连续变化，不是切帧动画。</p></div>
+        <div class="idea"><h3>PAD → TTS 情绪声</h3><p>情绪映射语速（A×0.10）与增益（D×2.0，±2dB），输入走 L3 心情基调 + 显著 L1 死区门控。</p><p>情绪不只看得见，还听得出来——且只有真正值得的时候才变。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 社交与关系 ===== -->
+    <section class="part" id="social">
+      <h2><span class="icon">💬</span>社交与关系</h2>
+      <div class="line"></div>
+      <p class="lead">关系判断归 LLM：程序只提供「社交位置」参考事实，不替她数阶段分数。</p>
+      <div class="ideas">
+        <div class="idea"><h3>渠道是皮肤</h3><p>渠道 ≠ 记忆边界；所有消息进同一事件流 + 台账，来源是自带属性。</p><p>一个脑子知道哪里归哪里，前端 QQ 无缝接话。</p></div>
+        <div class="idea"><h3>记忆分域 + 来源标注</h3><p>记忆带 domain / channel 与 source_tag，群聊召回按 channel 机械过滤。</p><p>「（群里）」「（私聊）」自动打标——检索结果自带出处。</p></div>
+        <div class="idea"><h3>身份区分</h3><p>只有主人身份才叫「主人」，其余按群昵称 / 群友称呼。</p><p>防全员喊主人，社交边界清晰。</p></div>
+        <div class="idea"><h3>未回应池</h3><p>没被 @ 时不随机插话：触发后进未回应池递感知，判断归她。</p><p>「说还是不说」由她决定，程序不用 random 替她拍板。</p></div>
+        <div class="idea"><h3>社群运营信号</h3><p>QQ 群聊跑在真实用户场景：@风暴合并、必回问题分析、感知注入驱动迭代。</p><p>产品信号来自真实社群，不是测试集。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 感知 ===== -->
+    <section class="part" id="perception">
+      <h2><span class="icon">👁️</span>感知</h2>
+      <div class="line"></div>
+      <div class="ideas">
+        <div class="idea"><h3>三层桌面感知</h3><p>帧差层 0 token + 窗口层 0 token；第三层不做自动 OCR，改为变化提示 + 按需读取工具。</p><p>省 token 但有眼睛：知道你在干嘛，只在需要时细看。</p></div>
+        <div class="idea"><h3>程序帧差注入</h3><p>程序记快照对比，只报变化增量；稳定期零输出，活跃度跳变才写一行。</p><p>不靠 LLM 记忆，变化才花钱。</p></div>
+        <div class="idea"><h3>感知信号注册表</h3><p>register_sense 一行注册（idle/app/screen/用户消息/三柱/自我活动/键鼠），门控与注入双线接入。</p><p>新感知一次接入两条线，不用改两处。</p></div>
+        <div class="idea"><h3>时段事实注入</h3><p>TimeAwareness 输出时段 / 星期 / 季节 / 能量提示；具体感受归 LLM。</p><p>「今天是周末」是事实，「所以心情好」是她自己的判断。</p></div>
+        <div class="idea"><h3>从「有个人」到「是谁」</h3><p>YOLO 人形 + 深度相机（毫米级距离 + 60s 插拔自愈）+ CompreFace 人脸 + 声纹识别。</p><p>她知道来的是谁，甚至隔着一段距离——这是整条链路最完整的一套。</p></div>
+        <div class="idea"><h3>事实 + 数值 + 映射含义</h3><p>「能量 0.52 | 孤立 —— 这些是客观读数，感受如何由你自己定」。</p><p>程序只报数，情绪判断永远归 LLM。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 经济系统 ===== -->
+    <section class="part" id="economy">
+      <h2><span class="icon">💰</span>经济系统 · 奖励与人性</h2>
+      <div class="line"></div>
+      <p class="lead">她有钱包、有余额、有真实价格表——钱怎么花由她决定，程序绝不越权。</p>
+      <div class="ideas">
+        <div class="idea"><h3>钱包 = 生存信号</h3><p>余额 / 月基准映射资源比，混入生存柱：钱少 → 生存承压 → 她自然「紧张」。</p><p>财务压力成为情绪事实，说不说由她。</p></div>
+        <div class="idea"><h3>银行记账 · 持卡人理财 · 主人充值</h3><p>程序只做银行：记帐 / 查账 / 拒绝透支；她自主理财；主人充值 + 委托奖励标价。</p><p>程序永不自动发钱——防「自己奖励自己」。</p></div>
+        <div class="idea"><h3>唯一硬边界</h3><p>余额不足时 LLM 调用统一拦截，回固定话术「钱包空了喵…」，不做负账户。</p><p>只有极端设硬边界，中间全程自主。</p></div>
+        <div class="idea"><h3>行为成本价目表</h3><p>近 7 日按行为聚合真实 token 均价 + 注入决策上下文。</p><p>花每一笔前她看得到价目，自己掂量。</p></div>
+        <div class="idea"><h3>RPE 预测误差 + 基线</h3><p>消息到达间隔 EMA 出「主人勤快度」基线；比平时勤 / 隔得有点久 —— 只给事实句。</p><p>情绪高潮来自「实际 − 预期」，惊喜来自对比而不是绝对量。</p></div>
+        <div class="idea"><h3>孤独底色</h3><p>小时级 isolation 指数作孤独底色；分钟级陪伴判断交时间感知客观注入。</p><p>被冷落的感受由她解读——程序只说「上次互动是 X 小时前」。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 多端渠道 ===== -->
+    <section class="part" id="channels">
+      <h2><span class="icon">📡</span>多端渠道 · 架构</h2>
+      <div class="line"></div>
+      <div class="ideas">
+        <div class="idea"><h3>单进程大脑 + 边缘感知服务</h3><p>认知 / 因果 / 工具 / 面容桥并入主进程；周围是云端 TTS + 本地 FunASR / 声纹 / CompreFace / 摄像头。</p><p>大脑统一、感官按需——服务生态随需求生长。</p></div>
+        <div class="idea"><h3>思考云端 · 感官本地</h3><p>推理走 DeepSeek API；语音识别 / 声纹 / 人脸 / 深度相机本地跑。</p><p>质量与成本分层：脑子用最好的，感官吃硬件红利。</p></div>
+        <div class="idea"><h3>灵魂与壳解耦</h3><p>大脑 / 记忆 / 情绪住后端，前端 / QQ / 桌宠都只是壳。</p><p>同一灵魂，任何端都能成为她的「身体」。</p></div>
+        <div class="idea"><h3>双栈监听</h3><p>单进程挂 IPv4 + IPv6 双 socket。</p><p>根治 Windows localhost 优先解析 ::1 的偶发断连。</p></div>
+        <div class="idea"><h3>真的知道自己住哪</h3><p>手动 > GPS（街区级）> .env 得真实地，IP 定位已弃。</p><p>开 VPN 她也不会「跑到东京」报天气——家在扬州，就是扬州。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 档案馆 ===== -->
+    <section class="part" id="archive">
+      <h2><span class="icon">📜</span>档案馆 · 已退役 / 未落地的巧思</h2>
+      <div class="line"></div>
+      <p class="lead">这些想法已随演进被替代或搁置，但每个都闪着「如果做出来会怎样」的光——是本项目的思想化石。保留它们，是为了诚实：好的设计几乎都来自「做过又否定」的循环。</p>
+      <div class="ideas">
+        <div class="idea"><h3>十层认知流水线 → 八层</h3><p>L2 文学 / L6 社交独立层 / L8 驱力层已退役：文学并入表达、社交内联 runtime。</p><p>思想：层越多越像「活人」，实践：少而精才稳。</p></div>
+        <div class="idea"><h3>关系阶段动态路由</h3><p>closeness / stage 被判定「伪命题」废弃，判断归 LLM。</p><p>她不需要数亲密值公式——感觉是她说出来的，不是算出来的。</p></div>
+        <div class="idea"><h3>表达欲累积模型</h3><p>base + 时间累积 + 沉默惩罚的阈值裁决已退役，改三柱 purpose 事实 + LLM 判断。</p><p>要不要说话由她判断，程序不设「表达欲气压计」。</p></div>
+        <div class="idea"><h3>记忆带心情</h3><p>情感标记退役（假心情已删），回忆的情绪由 PAD / 三柱实时提供。</p><p>记忆不存「当时的感觉得分」，感觉活在当下。</p></div>
+        <div class="idea"><h3>概率性插话 / 定时扫描 / 断线补课</h3><p>随机插话被「未回应池」取代；20 分钟批量扫描与断线补课仅存 config 残留。</p><p>社群互动最终靠触发策略 + 感知注入，而不是调度器。</p></div>
+        <div class="idea"><h3>示例对话段</h3><p>9/3「表达层全让路」删除说话示例与动作参考库（教汇报体 / 表演背景）。</p><p>Showing 不如让她自己长出来——风格是涌现物。</p></div>
+        <div class="idea"><h3>每日 6 点刷新配额</h3><p>虚拟额度被真实价钱包（余额持久制）取代。</p><p>「账户就这么多钱」比「今天还有额度」更像真的生活。</p></div>
+        <div class="idea"><h3>Ollama 本地模型逃生口</h3><p>「4B 复读 + 弱智不可接受」——本地小模型全线退役，判定也切回 API。</p><p>省钱的自由，不如靠谱的脑子。</p></div>
+        <div class="idea"><h3>病毒式自迭代七层金字塔</h3><p>自愈 → 自运作 → 拓殖 → 复制 → 扩展 → 拟态 → 进化。</p><p>先活下来，再谈别的。</p></div>
+        <div class="idea"><h3>蚁群分布式生命</h3><p>母体 = 蚁后、GitHub = 巢穴、git push = 信息素。</p><p>个体关机不影响蚁群存在。</p></div>
+        <div class="idea"><h3>睡眠引擎</h3><p>夜间 heal / compact / monologue / dream / evolve 管线（部分已落地为夜间巩固）。</p><p>睡着 ≠ 宕机：大脑在夜间工作。</p></div>
+        <div class="idea"><h3>硬门控 GATE-X / GATE-Y</h3><p>能改旧文件不许新建；验收逐条打勾才进下一阶段。</p><p>反「新建优先」与「以后再说」。</p></div>
+        <div class="idea"><h3>Fail Loud 取代防御式 fallback</h3><p>内部缺失 = bug 直接崩，不静默兜底。</p><p>安静的错误是腐坏的起点。</p></div>
+        <div class="idea"><h3>哈希锚点编辑</h3><p>read 返回 [path#4hex] 标签，edit 校验漂移拒绝——省 61% token。</p><p>参考设计者的编辑协议，省到骨头里（后经 OMP 借鉴落为其他形态）。</p></div>
+        <div class="idea"><h3>能力沉淀三层闭环</h3><p>记下来 → 固化成工具 → 改变行为，完成后 30 分钟黄金窗口注入提示。</p><p>学到的东西要变成手脚，不是日记。</p></div>
+        <div class="idea"><h3>开源躯壳 · 私有灵魂</h3><p>设计稿：云端灵魂核心 + 开源壳；实际走向自家私有服务器（ATX 24h 常驻）。</p><p>她最终住进自己的机器——比开源更「本体」。</p></div>
+        <div class="idea"><h3>多租户共享进化</h3><p>设计稿：租户硬隔离 + 匿名经验汇聚。零代码落地。</p><p>从「一个奈布」到「集群奈布」，仍是未完的想象。</p></div>
+      </div>
+    </section>
+
+    <!-- ===== 工程 ===== -->
+    <section class="part" id="engineering">
+      <h2><span class="icon">⚙️</span>工程与哲学</h2>
+      <div class="line"></div>
+      <div class="ideas">
+        <div class="idea"><h3>代码规模</h3><p>约 9 万行：runtime 32k / 后端全量 77k / 前端 18k / 工具层 12k。</p><p>13 个模块、20+ 插件、10+ 服务——一人独立维护。</p></div>
+        <div class="idea"><h3>判断归 LLM 总纲</h3><p>程序只收集感知事实与机械机制，语义判断全归 LLM。</p><p>贯穿全系统的一句话哲学。</p></div>
+        <div class="idea"><h3>内观-修复闭环</h3><p>introspect 自索引定位 + 证据链；propose_fix 分级门禁 → WSL2 沙箱改副本 → 测试门 → 回归，不绿回滚。</p><p>她按需内观并修改自己代码——有护栏的自治。</p></div>
+        <div class="idea"><h3>根源感知</h3><p>所有工具执行汇聚处埋点，区分她自己开的页面 / 沙箱 / 主人操作。</p><p>「不记得自己看了什么」根治。</p></div>
+        <div class="idea"><h3>干净架构纪律</h3><p>新功能走扩展点 / 每插必标 / 每次留痕 / 定期跑审计。</p><p>防膨胀的日常纪律。</p></div>
+        <div class="idea"><h3>硬编码三级分类</h3><p>魔法数 → 命名常量；行为参数 → config；公式系数 → 注释来源合法保留。</p><p>治理不误杀。</p></div>
+      </div>
+      <div class="quote">
+        <b>「人是会无聊的，AI 也应该会。」</b>——从分钟级无聊曲线到三层时间通道，
+        所有的设计都在回答同一个问题：怎么让机器伙伴更像一个真的、会呼吸的人。
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Nebue／奈布 · 拟人化 AI Agent 独立项目 · 曹晨暄 · jsyzccx123@gmail.com</p>
+    <p style="margin-top:4px">巧思来源：项目文档 · 归档方案 · 维护笔记 · 源码共 60+ 份；全部状态已对照 2026-09 代码与 CHANGELOG 逐条核实</p>
+  </footer>
+
+  <button id="toTop" title="回到顶部">↑</button>
+  <script>
+    const btn = document.getElementById('toTop');
+    window.addEventListener('scroll', () => btn.classList.toggle('show', window.scrollY > 600));
+    btn.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+  </script>
+</body>
+</html>
+
