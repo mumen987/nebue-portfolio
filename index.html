@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nebue／奈布 · 小巧思全景 — 拟人化 AI Agent 作品集</title>
+  <title>Nebue／奈布 · 设计决策全景 — 拟人化 AI Agent 作品集</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,11 +31,11 @@
   <!-- ===== Hero ===== -->
   <header class="hero">
     <div class="kicker">拟 人 化 AI · 独 立 开 发 · 2026.07 – 至 今</div>
-    <h1>Nebue／奈布 <em>小巧思全景</em></h1>
+    <h1>Nebue／奈布 <em>设计决策全景</em></h1>
     <p class="sub">
       不只是聊天机器人——一套拥有认知流水线、物理级情感引擎、因果追溯、
       自迭代驱力演化、工具自治工坊、实时 Live2D 面部映射的完整虚拟生命系统。
-      下面每一张卡片，都是这些系统运转背后的一个「啊哈」设计决策
+      下面每一张卡片，都是这些系统运转背后的关键设计决策
       （各状态均对照当前代码核实，退役设计归入档案馆）。
     </p>
     <div class="stats">
@@ -52,7 +52,11 @@
     <section class="part" id="overview">
       <h2><span class="icon">◈</span>总览</h2>
       <div class="line"></div>
-      <p class="lead">两张架构图（对照 2026-09 代码）：深度思考决策层（先思考、再决策、后表达的统一说话链路）与知识管道（清洗、入库、自净、闭环）。</p>
+      <p class="lead">先看系统如何整体运转，再钻两层细节（均对照 2026-09 代码）：深度思考决策层（先思考、再决策、后表达的统一说话链路）与知识管道（清洗、入库、自净、闭环）。</p>
+      <figure class="shot">
+        <img src="assets/arch-map.jpg" alt="Nebue 系统模块总览地图（2026-09）">
+        <figcaption>系统模块总览地图——输入感知 → 认知核心 → 决策 → 表达与行动（对照 2026-09 代码）</figcaption>
+      </figure>
       <div class="figrow">
         <figure>
           <img src="assets/nebue-decision.jpg" alt="深度思考决策层架构：统一说话链路（2026-09）">
@@ -139,6 +143,10 @@
         <div class="idea"><h3>别堆指标 · 不造假</h3><p>每层只 2-4 参数，均值 + 方差 + 惯性三件套；无数据保持中性。</p><p>Dejonckheere 15 研究：花哨指标几乎无增量价值。</p></div>
         <div class="idea"><h3>唤醒自然下行</h3><p>距最后真实消息 3min / 15min / 2h 分档压唤醒（0.25 / 0.12），只压唤醒不动效价。</p><p>用「主人陪不陪」计时，而不是感知注入。</p></div>
       </div>
+      <figure class="shot">
+        <img src="assets/arch-emotion.jpg" alt="情感三层时间架构（2026-09）">
+        <figcaption>情感三层时间架构——L1 对话情绪 / L2 安静化 / L3 心情基调（对照 2026-09 代码）</figcaption>
+      </figure>
     </section>
 
     <!-- ===== 主观能动性 ===== -->
@@ -278,7 +286,7 @@
 
     <!-- ===== 档案馆 ===== -->
     <section class="part" id="archive">
-      <h2><span class="icon">📜</span>档案馆 · 已退役 / 未落地的巧思</h2>
+      <h2><span class="icon">📜</span>档案馆 · 已退役 / 未落地的设计决策</h2>
       <div class="line"></div>
       <p class="lead">这些想法已随演进被替代或搁置，但每个都闪着「如果做出来会怎样」的光——是本项目的思想化石。保留它们，是为了诚实：好的设计几乎都来自「做过又否定」的循环。</p>
       <div class="ideas">
@@ -324,7 +332,7 @@
 
   <footer>
     <p>Nebue／奈布 · 拟人化 AI Agent 独立项目 · 曹晨暄 · jsyzccx123@gmail.com</p>
-    <p style="margin-top:4px">巧思来源：项目文档 · 归档方案 · 维护笔记 · 源码共 60+ 份；全部状态已对照 2026-09 代码与 CHANGELOG 逐条核实</p>
+    <p style="margin-top:4px">设计决策来源：项目文档 · 归档方案 · 维护笔记 · 源码共 60+ 份；全部状态已对照 2026-09 代码与 CHANGELOG 逐条核实</p>
   </footer>
 
   <button id="toTop" title="回到顶部">↑</button>
@@ -332,7 +340,25 @@
     const btn = document.getElementById('toTop');
     window.addEventListener('scroll', () => btn.classList.toggle('show', window.scrollY > 600));
     btn.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
+
+    // 图片点击放大
+    const lb = document.createElement('div');
+    lb.className = 'lb';
+    document.body.appendChild(lb);
+    document.querySelectorAll('.shot img, .figrow img').forEach(img => {
+      img.addEventListener('click', e => {
+        e.stopPropagation();
+        lb.innerHTML = '';
+        const m = new Image();
+        m.src = img.src;
+        lb.appendChild(m);
+        lb.classList.add('show');
+      });
+    });
+    lb.addEventListener('click', () => lb.classList.remove('show'));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('show'); });
   </script>
 </body>
 </html>
+
 

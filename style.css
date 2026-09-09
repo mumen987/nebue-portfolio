@@ -120,3 +120,14 @@ footer { border-top: 1px solid var(--line); text-align: center; color: var(--dim
   display: none; align-items: center; justify-content: center; font-size: 16px;
 }
 #toTop.show { display: flex; }
+
+/* ===== 图片放大查看 ===== */
+.shot img, .figrow img { cursor: zoom-in; }
+.lb {
+  position: fixed; inset: 0; z-index: 100;
+  background: rgba(5, 7, 10, .94);
+  display: none; align-items: center; justify-content: center;
+  cursor: zoom-out; padding: 18px;
+}
+.lb.show { display: flex; }
+.lb img { max-width: 96vw; max-height: 94vh; border-radius: 10px; box-shadow: 0 12px 60px rgba(0,0,0,.8); }
